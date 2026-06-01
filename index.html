@@ -11,22 +11,35 @@
     <div id="hud">
       <div class="hi"><span class="hl">SCORE</span><span class="hv" id="sv">0</span></div>
       <div class="hi"><span class="hl">COINS</span><span class="hv coin" id="cv">0</span></div>
-      <div id="title">ChromaHop</div>
+      <div id="title">CHROMAHOP</div>
+      <div id="healthBar">
+        <span class="hl">HP</span>
+        <div id="hpTrack"><div id="hpFill"></div></div>
+      </div>
       <div class="hi"><span class="hl">LIVES</span><span class="hv life" id="lv">3</span></div>
-      <div class="hi"><span class="hl">LEVEL</span><span class="hv lvl" id="lev">1</span></div>
+      <div class="hi"><span class="hl">LVL</span><span class="hv lvl" id="lev">1</span></div>
     </div>
 
     <canvas id="c" width="680" height="340"></canvas>
 
     <div id="ov">
-      <h2>ChromaHop</h2>
-      <p class="sub">Collect coins, stomp enemies, reach the flag!</p>
+      <h2>CHROMAHOP</h2>
+      <p class="sub">
+        Reach the flag to advance.<br>
+        Stomp red enemies. Avoid blue spiked ones.
+      </p>
+      <div class="legend">
+        <span><span class="dot" style="background:#e74c3c;"></span>Stompable</span>
+        <span><span class="dot" style="background:#5dade2;"></span>Avoid (spiked)</span>
+        <span><span class="dot" style="background:#2ecc71;"></span>Health pack</span>
+        <span><span class="dot" style="background:#e8c46a;"></span>Coin</span>
+      </div>
       <p class="keys">
         <span class="k">← →</span> Move &nbsp;
         <span class="k">↑ Space Z</span> Jump
       </p>
       <button id="sb" onclick="startGame()">PLAY</button>
-      <p class="mobile-note">Use buttons below on mobile</p>
+      <p class="mobile-note">On-screen controls below for mobile</p>
     </div>
 
     <div id="ctrl">
