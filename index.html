@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChromaHop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="gc">
+    <div id="hud">
+      <div class="hi"><span class="hl">SCORE</span><span class="hv" id="sv">0</span></div>
+      <div class="hi"><span class="hl">COINS</span><span class="hv coin" id="cv">0</span></div>
+      <div id="title">ChromaHop</div>
+      <div class="hi"><span class="hl">LIVES</span><span class="hv life" id="lv">3</span></div>
+      <div class="hi"><span class="hl">LEVEL</span><span class="hv lvl" id="lev">1</span></div>
+    </div>
+
+    <canvas id="c" width="680" height="340"></canvas>
+
+    <div id="ov">
+      <h2>ChromaHop</h2>
+      <p class="sub">Collect coins, stomp enemies, reach the flag!</p>
+      <p class="keys">
+        <span class="k">← →</span> Move &nbsp;
+        <span class="k">↑ Space Z</span> Jump
+      </p>
+      <button id="sb" onclick="startGame()">PLAY</button>
+      <p class="mobile-note">Use buttons below on mobile</p>
+    </div>
+
+    <div id="ctrl">
+      <div class="cg">
+        <button class="btn" id="bL">&#9664;</button>
+        <button class="btn" id="bR">&#9654;</button>
+      </div>
+      <div class="cg">
+        <button class="btn jump" id="bJ">&#9650;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
